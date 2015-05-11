@@ -1,0 +1,16 @@
+default: &default
+  adapter: mysql2
+
+development:
+  <<: *default
+  database: nanno_development
+  username: root
+
+
+test:
+  <<: *default
+  database: db/test.sqlite3
+
+production:
+  <<: *default
+  database: db/production.sqlite3
