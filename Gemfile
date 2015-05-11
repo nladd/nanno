@@ -15,7 +15,8 @@ gem 'rspec-rails', '~> 3.2.1'
 gem 'uglifier', '>= 1.3.0'
 
 group :native do
-  gem 'mysql2', '~> 0.3.18'
+#  gem 'mysql2', '~> 0.3.18'
+  gem 'pg', '~> 0.18.1'
 end
 
 group :development, :test do
